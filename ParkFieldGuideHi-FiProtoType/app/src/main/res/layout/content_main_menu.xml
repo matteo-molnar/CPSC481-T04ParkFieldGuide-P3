@@ -14,8 +14,4 @@
     tools:showIn="@layout/activity_main_menu"
     tools:context="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.MainMenu">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
 </RelativeLayout>
