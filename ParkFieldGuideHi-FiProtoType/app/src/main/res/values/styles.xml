@@ -16,6 +16,7 @@
 
     <style name="MenuButton">
         <item name="android:typeface">serif</item>
+        <item name="android:textSize">30dp</item>
         <item name="android:layout_width">205dp</item>
         <item name="android:layout_height">100dp</item>
     </style>

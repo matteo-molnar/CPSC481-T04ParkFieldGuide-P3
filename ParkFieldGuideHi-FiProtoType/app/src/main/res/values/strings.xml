@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Park Field Guide Hi-Fi ProtoType</string>
     <string name="action_settings">Settings</string>
+    <string name="mapButton_text">Map</string>
+    <string name="scanButton_text">Scan</string>
+    <string name="wildLifeButton_text">WildLife</string>
+    <string name="newsButton_text">News</string>
 </resources>
