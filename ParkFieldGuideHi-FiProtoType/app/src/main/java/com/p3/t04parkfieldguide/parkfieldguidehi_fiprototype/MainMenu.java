@@ -76,4 +76,10 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, NewsMenu.class);
         startActivity(intent);
     }
+
+    public void openScan(View view)
+    {
+        Intent intent = new Intent(this, ScanMenu.class);
+        startActivity(intent);
+    }
 }

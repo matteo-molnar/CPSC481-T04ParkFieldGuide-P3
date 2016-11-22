@@ -36,6 +36,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.MainMenu" />
         </activity>
+        <activity android:name=".ScanMenu"></activity>
     </application>
 
 </manifest>
