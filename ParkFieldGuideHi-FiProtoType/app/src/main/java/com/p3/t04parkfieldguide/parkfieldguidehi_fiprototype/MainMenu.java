@@ -29,7 +29,7 @@ public class MainMenu extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Button button = (Button)findViewById(R.id.camera);
-        //result = (IamgeView)findViewById(R.id.imageView)
+        result = (ImageView)findViewById(R.id.imageView);
 
 //       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
