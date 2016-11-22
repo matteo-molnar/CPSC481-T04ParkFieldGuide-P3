@@ -14,13 +14,13 @@
     tools:context="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.MainMenu">
 
 
-    <!--<ImageView-->
-        <!--android:layout_width="190dp"-->
-        <!--android:layout_heigh="150dp"-->
-        <!--android:id="@+id/imageView"-->
-        <!--android:layout_row="1"-->
-        <!--android:layout_column="0"-->
-        <!--android:src="@drawable/fish-creek-provincial" />-->
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:src="@drawable/park" />
 
     <Button
         android:text="@string/wildLifeButton_text"
