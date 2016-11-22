@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype" >
+    package="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainMenu"
             android:label="Main Menu"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".WildLifeMenu"
+            android:label="@string/title_activity_wild_life_menu"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.MainMenu" />
+        </activity>
+        <activity
+            android:name=".NewsMenu"
+            android:label="@string/title_activity_news_menu"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.MainMenu" />
         </activity>
     </application>
 

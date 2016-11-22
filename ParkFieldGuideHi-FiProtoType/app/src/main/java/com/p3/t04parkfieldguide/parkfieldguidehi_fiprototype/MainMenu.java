@@ -11,6 +11,12 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
 public class MainMenu extends AppCompatActivity {
 
     ImageView result;
@@ -55,5 +61,19 @@ public class MainMenu extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    // Called when user clicks the WildLife button
+    public void openWildLife(View view)
+    {
+        Intent intent = new Intent(this, WildLifeMenu.class);
+        startActivity(intent);
+    }
+
+    // Called when user clicks the News button
+    public void openNews(View view)
+    {
+        Intent intent = new Intent(this, NewsMenu.class);
+        startActivity(intent);
     }
 }
