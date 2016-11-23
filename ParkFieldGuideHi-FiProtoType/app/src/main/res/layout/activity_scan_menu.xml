@@ -4,27 +4,35 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
+    <Button
+        android:text="HOME"
+        android:layout_width="109dp"
+        android:layout_height="60dp"
+        android:id="@+id/button" />
+
     <ImageView
-        android:layout_width="350dp"
-        android:layout_height="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
         android:id="@+id/image_view"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        />
+        android:layout_marginTop="5dp"
+        android:src="@drawable/moose"
+        android:layout_weight="0.79" />
+    />
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.08">
+        android:layout_height="60dp"
+        android:text="SCAN IMAGE"
+        android:id="@+id/camera"
+        android:layout_gravity="center_horizontal" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Capture Image"
-            android:id="@+id/camera"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1" />
-    </LinearLayout>
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textOff="[ANIMALS SELECTED]"
+        android:textOn="[PLANTS SELECTED]"
+        android:id="@+id/toggleButton" />
 
 </LinearLayout>
