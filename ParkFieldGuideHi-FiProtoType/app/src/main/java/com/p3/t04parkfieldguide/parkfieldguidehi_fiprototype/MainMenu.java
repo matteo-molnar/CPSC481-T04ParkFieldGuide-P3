@@ -19,17 +19,12 @@ import android.widget.EditText;
 
 public class MainMenu extends AppCompatActivity {
 
-    ImageView result;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        Button button = (Button)findViewById(R.id.camera);
-        result = (ImageView)findViewById(R.id.imageView);
 
 //       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
