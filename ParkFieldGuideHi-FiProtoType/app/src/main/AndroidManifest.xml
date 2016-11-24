@@ -41,6 +41,9 @@
             android:name=".MooseInfo"
             android:label="Moose Info">
         </activity>
+        <activity android:name=".BirchInfo"
+            android:label="Birch Info">
+        </activity>
     </application>
 
 </manifest>

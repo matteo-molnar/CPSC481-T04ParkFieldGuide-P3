@@ -15,7 +15,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:text="Moose"
+            android:text="Birch Tree"
             android:typeface="serif"
             android:textSize="40dp"
             android:layout_margin="20dp"
@@ -25,14 +25,14 @@
             android:id="@+id/mooseHeader" />
 
         <ImageView
-            android:src="@drawable/moosewild"
+            android:src="@drawable/birchtrees"
             android:layout_width="wrap_content"
             android:layout_height="250dp"
             android:id="@+id/picHeader"
             android:layout_below="@id/mooseHeader"/>
 
         <TextView
-            android:text="@string/moose_info"
+            android:text="@string/birch_info"
             android:typeface="serif"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
@@ -40,6 +40,6 @@
             android:layout_below="@id/picHeader"/>
 
     </RelativeLayout
-     >
+        >
 
 </android.support.v4.widget.NestedScrollView>

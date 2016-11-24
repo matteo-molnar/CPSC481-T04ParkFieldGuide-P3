@@ -23,4 +23,10 @@ public class WildLifeMenu extends AppCompatActivity {
         Intent intent = new Intent(this, MooseInfo.class);
         startActivity(intent);
     }
+
+    public void clickBirchButton(View view)
+    {
+        Intent intent = new Intent(this, BirchInfo.class);
+        startActivity(intent);
+    }
 }
