@@ -190,4 +190,7 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_news_menu">News</string>
+    <string name="moose_info">
+        "The moose (North America) or elk (Eurasia), Alces alces, is the largest extant species in the deer family. Moose are distinguished by the broad, flat (or palmate) antlers of the males; other members of the family have antlers with a dendritic ("twig-like") configuration. Moose typically inhabit boreal forests and temperate broadleaf and mixed forests of the Northern Hemisphere in temperate to subarctic climates. Hunting and other human activities have caused a reduction in the size of the moose's range over time. Moose have been reintroduced to some of their former habitats. Currently, most moose are found in Canada, Alaska, New England, Scandinavia, Latvia, Estonia and Russia. Their diet consists of both terrestrial and aquatic vegetation. The most common moose predators are the gray wolf along with bears and humans. Unlike most other deer species, moose are solitary animals and do not form herds. Although generally slow-moving and sedentary, moose can become aggressive and move quickly if angered or startled. Their mating season in the autumn features energetic fights between males competing for a female."
+    </string>
 </resources>

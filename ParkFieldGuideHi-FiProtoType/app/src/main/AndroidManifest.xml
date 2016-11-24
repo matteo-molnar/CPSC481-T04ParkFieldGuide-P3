@@ -36,7 +36,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.MainMenu" />
         </activity>
-        <activity android:name=".ScanMenu"></activity>
+        <activity android:name=".ScanMenu" />
+        <activity
+            android:name=".MooseInfo"
+            android:label="Moose Info">
+        </activity>
     </application>
 
 </manifest>
