@@ -37,7 +37,7 @@
                 android:value="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.MainMenu" />
         </activity>
         <activity
-            android:name=".ScanMenu"
+            android:name=".ScanMenuAnimal"
             android:label="Scan Menu">
         </activity>
         <activity

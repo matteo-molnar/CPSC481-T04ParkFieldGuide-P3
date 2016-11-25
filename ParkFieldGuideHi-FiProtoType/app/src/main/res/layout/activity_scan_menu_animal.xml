@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:text="HOME"
+        android:layout_width="109dp"
+        android:layout_height="60dp"
+        android:id="@+id/button1"
+        android:onClick="openMain (ScanMenuAnimal)" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="266dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/image_view"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/moose"
+            android:layout_weight="0.79" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="SCAN IMAGE"
+        android:id="@+id/animalMenuScan"
+        android:layout_gravity="center_horizontal"
+        android:onClick="scan (ScanMenuAnimal)" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="[ANIMALS SELECTED]"
+        android:id="@+id/animalMenuToggle"
+        android:layout_gravity="center_horizontal"
+        android:onClick="togglePlant (ScanMenuAnimal)"/>
+
+</LinearLayout>
