@@ -48,6 +48,10 @@
             android:name=".BirchInfo"
             android:label="Birch Info">
         </activity>
+        <activity
+            android:name=".ParkMap"
+            android:label="Park Map">
+        </activity>
     </application>
 
 </manifest>
