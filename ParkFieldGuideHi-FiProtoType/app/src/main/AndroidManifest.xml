@@ -36,12 +36,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.MainMenu" />
         </activity>
-        <activity android:name=".ScanMenu" />
+        <activity
+            android:name=".ScanMenu"
+            android:label="Scan Menu">
+        </activity>
         <activity
             android:name=".MooseInfo"
             android:label="Moose Info">
         </activity>
-        <activity android:name=".BirchInfo"
+        <activity
+            android:name=".BirchInfo"
             android:label="Birch Info">
         </activity>
     </application>
