@@ -1,43 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_moose_info"
+    android:id="@+id/activity_sign_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.MooseInfo">
+    tools:context="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.SignInfo">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:text="Moose"
+            android:text="Jerry's Crossing"
             android:typeface="serif"
             android:textSize="40dp"
             android:layout_margin="20dp"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/mooseHeader" />
-
-        <ImageView
-            android:src="@drawable/moosewild"
-            android:layout_width="wrap_content"
-            android:layout_height="250dp"
-            android:id="@+id/picHeader"
-            android:layout_below="@id/mooseHeader"/>
+            android:id="@+id/signHeader" />
 
         <TextView
-            android:text="@string/moose_info"
+            android:text="@string/sign_info"
             android:typeface="serif"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/picHeader"/>
+            android:layout_below="@id/signHeader"/>
 
     </RelativeLayout>
 

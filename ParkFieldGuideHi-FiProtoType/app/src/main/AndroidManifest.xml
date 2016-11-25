@@ -52,6 +52,10 @@
             android:name=".ParkMap"
             android:label="Park Map">
         </activity>
+        <activity
+            android:name=".SignInfo"
+            android:label="Jerry's Crossing Info">
+        </activity>
     </application>
 
 </manifest>

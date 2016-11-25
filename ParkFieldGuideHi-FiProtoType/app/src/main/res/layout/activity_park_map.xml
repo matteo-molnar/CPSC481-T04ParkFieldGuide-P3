@@ -11,4 +11,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:background="@drawable/sign"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:id="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="196dp"
+        android:onClick="clickSign" />
+
+    <ImageView
+        android:src="@drawable/marker"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView2" />
+
 </RelativeLayout>

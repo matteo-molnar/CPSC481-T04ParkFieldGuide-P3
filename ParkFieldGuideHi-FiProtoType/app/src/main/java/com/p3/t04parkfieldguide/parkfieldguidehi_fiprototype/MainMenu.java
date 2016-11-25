@@ -63,4 +63,10 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, ScanMenu.class);
         startActivity(intent);
     }
+
+    public void openMap(View view)
+    {
+        Intent intent = new Intent(this, ParkMap.class);
+        startActivity(intent);
+    }
 }
