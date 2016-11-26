@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_park_map"
+    android:weightSum="1"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    tools:context="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.ParkMap">
 
     <Button
         android:text="HOME"
         android:layout_width="109dp"
         android:layout_height="60dp"
         android:id="@+id/button"
-        android:onClick="openMain (ScanMenu)" />
+        android:onClick="openMain" />
 
     <RelativeLayout
         android:orientation="vertical"
@@ -19,7 +22,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="250dp"
-            android:id="@+id/image_view"
+            android:id="@+id/scan_image"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
             android:src="@drawable/moose"
@@ -31,12 +34,13 @@
             android:text="[MOOSE INFO]"
             android:id="@+id/moose"
             android:layout_gravity="center_horizontal"
-            android:onClick="openWildLife (ScanMenu)"
+            android:onClick="openMoose"
             android:visibility="invisible"
+
             android:layout_marginRight="29dp"
             android:layout_marginEnd="29dp"
             android:layout_marginBottom="51dp"
-            android:layout_alignBottom="@+id/image_view"
+            android:layout_alignBottom="@+id/scan_image"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
@@ -46,8 +50,9 @@
             android:text="[MOOSE INFO]"
             android:id="@+id/moose2"
             android:layout_gravity="center_horizontal"
-            android:onClick="openWildLife (ScanMenu)"
+            android:onClick="openMoose"
             android:visibility="invisible"
+
             android:layout_marginLeft="50dp"
             android:layout_marginStart="50dp"
             android:layout_above="@+id/moose"
@@ -60,9 +65,10 @@
             android:text="[TREE INFO]"
             android:id="@+id/tree"
             android:layout_gravity="center_horizontal"
-            android:onClick="openWildLife (ScanMenu)"
+            android:onClick="openBirch"
             android:visibility="invisible"
-            android:layout_alignTop="@+id/image_view"
+
+            android:layout_alignTop="@+id/scan_image"
             android:layout_toRightOf="@+id/moose2"
             android:layout_toEndOf="@+id/moose2"
             android:layout_marginLeft="27dp"
@@ -75,11 +81,12 @@
             android:text="[TREE INFO]"
             android:id="@+id/tree2"
             android:layout_gravity="center_horizontal"
-            android:onClick="openWildLife (ScanMenu)"
+            android:onClick="openBirch"
             android:visibility="invisible"
+
             android:layout_marginRight="24dp"
             android:layout_marginEnd="24dp"
-            android:layout_alignBottom="@+id/image_view"
+            android:layout_alignBottom="@+id/scan_image"
             android:layout_alignRight="@+id/moose2"
             android:layout_alignEnd="@+id/moose2"
             android:layout_marginBottom="25dp" />
@@ -91,7 +98,7 @@
         android:text="SCAN IMAGE"
         android:id="@+id/camera"
         android:layout_gravity="center_horizontal"
-        android:onClick="buttonOnClick (ScanMenu)" />
+        android:onClick="scanOnClick" />
 
     <ToggleButton
         android:text="ToggleButton"
@@ -99,6 +106,7 @@
         android:layout_height="90dp"
         android:textOff="[ANIMALS SELECTED]"
         android:textOn="[PLANTS SELECTED]"
-        android:id="@+id/scanToggle" />
+        android:id="@+id/scanToggle"
+        android:onClick="scanTogglePressed"/>
 
 </LinearLayout>

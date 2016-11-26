@@ -9,49 +9,32 @@ import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
 public class ScanMenu extends AppCompatActivity {
-    private Boolean scanToggle = false;
+    Button moose1 = (Button)findViewById(R.id.moose);
+    Button moose2 = (Button)findViewById(R.id.moose2);
+    Button birch1 = (Button)findViewById(R.id.tree);
+    Button birch2 = (Button)findViewById(R.id.tree2);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan_menu);
+    }
 
-        ToggleButton toggle = (ToggleButton) findViewById(R.id.scanToggle);
-        toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    scanToggle = true;
-                } else {
-                    scanToggle = false;
-                }
-                Button btn=(Button)findViewById(R.id.moose);
-                btn.setVisibility(View.INVISIBLE);
-
-                btn=(Button)findViewById(R.id.moose2);
-                btn.setVisibility(View.INVISIBLE);
-
-                btn=(Button)findViewById(R.id.tree);
-                btn.setVisibility(View.INVISIBLE);
-
-                btn=(Button)findViewById(R.id.tree2);
-                btn.setVisibility(View.INVISIBLE);
-            }
-        });
+    public void scanTogglePressed(View view) {
+        moose1.setVisibility(View.INVISIBLE);
+        moose2.setVisibility(View.INVISIBLE);
+        birch1.setVisibility(View.INVISIBLE);
+        birch2.setVisibility(View.INVISIBLE);
     }
 
     public void scanOnClick(View view) {
-        if(scanToggle) {
-            Button btn=(Button)findViewById(R.id.tree);
-            btn.setVisibility(View.VISIBLE);
-
-            btn=(Button)findViewById(R.id.tree2);
-            btn.setVisibility(View.VISIBLE);
+        boolean checked = ((ToggleButton)findViewById(R.id.scanToggle)).isChecked();
+        if(checked) {
+            birch1.setVisibility(View.VISIBLE);
+            birch2.setVisibility(View.VISIBLE);
         } else {
-            Button btn=(Button)findViewById(R.id.moose);
-            btn.setVisibility(View.VISIBLE);
-
-            btn=(Button)findViewById(R.id.moose2);
-            btn.setVisibility(View.VISIBLE);
+            moose1.setVisibility(View.VISIBLE);
+            moose2.setVisibility(View.VISIBLE);
         }
     }
 
@@ -61,10 +44,15 @@ public class ScanMenu extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // Called when user clicks the WildLife button
-    public void openWildLife(View view)
+    public void openMoose(View view)
     {
-        Intent intent = new Intent(this, WildLifeMenu.class);
+        Intent intent = new Intent(this, MooseInfo.class);
+        startActivity(intent);
+    }
+
+    public void openBirch(View view)
+    {
+        Intent intent = new Intent(this, BirchInfo.class);
         startActivity(intent);
     }
 
