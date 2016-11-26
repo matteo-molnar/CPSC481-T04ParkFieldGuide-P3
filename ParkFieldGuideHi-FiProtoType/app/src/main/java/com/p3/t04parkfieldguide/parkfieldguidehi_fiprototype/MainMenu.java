@@ -6,6 +6,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.content.Intent;
 
 public class MainMenu extends AppCompatActivity {
@@ -58,7 +60,7 @@ public class MainMenu extends AppCompatActivity {
 
     public void openScan(View view)
     {
-        Intent intent = new Intent(this, ScanMenuAnimal.class);
+        Intent intent = new Intent(this, ScanMenu.class);
         startActivity(intent);
     }
 
