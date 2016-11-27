@@ -9,15 +9,20 @@ import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
 public class ScanMenu extends AppCompatActivity {
-    Button moose1 = (Button)findViewById(R.id.moose);
-    Button moose2 = (Button)findViewById(R.id.moose2);
-    Button birch1 = (Button)findViewById(R.id.tree);
-    Button birch2 = (Button)findViewById(R.id.tree2);
+    Button moose1;
+    Button moose2;
+    Button birch1;
+    Button birch2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan_menu);
+
+        moose1 = (Button)findViewById(R.id.moose);
+        moose2 = (Button)findViewById(R.id.moose2);
+        birch1 = (Button)findViewById(R.id.tree);
+        birch2 = (Button)findViewById(R.id.tree2);
     }
 
     public void scanTogglePressed(View view) {
