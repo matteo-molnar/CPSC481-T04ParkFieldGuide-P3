@@ -8,10 +8,44 @@
     tools:context="com.p3.t04parkfieldguide.parkfieldguidehi_fiprototype.NewsMenu"
     tools:showIn="@layout/activity_news_menu">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text_news" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="3">
+
+        <ImageView
+            android:src="@drawable/notification"
+            android:layout_margin="20dp"
+            android:layout_height="70dp"
+            android:layout_width="100dp"
+            android:layout_column="0"
+            android:layout_row="0" />
+
+        <Button
+            android:text="Path Re-Opened"
+            android:textSize="22dp"
+            android:typeface="serif"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="match_parent"
+            android:layout_width="215dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+        <TextView
+            android:text="..."
+            android:textSize="25dp"
+            android:typeface="serif"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+    </GridLayout>
 
 </android.support.v4.widget.NestedScrollView>
